@@ -1,12 +1,11 @@
 import Head from 'next/head';
 
+import { fetchProducts } from '../common/utils';
 import Layout from '../componets/layout';
 import utilStyles from '../styles/utils.module.css';
 
 export async function getStaticProps() {
-  const res = await fetch('https://dummyjson.com/products');
-  const { products } = await res.json();
-
+  const products = await fetchProducts();
   return {
     props: { products },
   };

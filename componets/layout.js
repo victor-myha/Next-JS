@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Link href='/posts/first-post'>First Post</Link>
+            <Link href='/products/first-product'>First Product</Link>
             <Image priority src='/images/box.png' className={utilStyles.borderCircle} height={144} width={144} alt='' />
             <h1 className={utilStyles.heading2Xl}>Products</h1>
           </>
